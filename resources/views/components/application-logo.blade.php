@@ -1,1 +1,0 @@
-<img src="{{ asset('img/cloub.png')}}" height="" width="300" alt="">

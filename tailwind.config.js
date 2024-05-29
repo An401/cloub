@@ -15,11 +15,21 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
         },
+
         colors: {
             'dark':'#555577',
+            'branco': '#C4D1D7',
+            'azul': '#386FA4',
         },
+
+        backgroundColor: {
+            'azul': '#386FA4',
+            'branco': '#C4D1D7',
+            'brancoRgb': 'rgba(217,217,217,0.1)',
+        },
+
         backgroundImage: {
-            '01': "url(/public/img/fundo.jpg)",
+            'fundo': "url(/public/img/fundo.jpg)",
         },
     },
 

@@ -15,16 +15,25 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
         },
+        
 
         colors: {
             'dark':'#555577',
-            'branco': '#C4D1D7',
+            'branco': '#D9FFFF',
             'azul': '#386FA4',
+            'vermelho': 'rgb(255,0,0)',
+            'azulEsverdeado': '#007EA7'
+        },
+
+        borderRadius: {
+            'lgg':'2rem',
+            'lg': '1rem',
+            'md': '0.5rem',
         },
 
         backgroundColor: {
             'azul': '#386FA4',
-            'branco': '#C4D1D7',
+            'branco': '#D9FFFF',
             'brancoRgb': 'rgba(217,217,217,0.1)',
         },
 
@@ -32,6 +41,7 @@ export default {
             'fundo': "url(/public/img/fundo.jpg)",
         },
     },
+    
 
     plugins: [forms],
 };

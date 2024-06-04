@@ -44,8 +44,8 @@
                                 <td class="align-middle">{{ $teacher->disciplina }}</td>
                                 <td class="align-middle">
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a href="{{ route('admin/teachers/edit', ['id'=>$teacher->id])}}" type="button" class="btn btn-secondary">Editar</a>
-                                        <a href="{{ route('admin/teachers/delete', ['id'=>$teacher->id])}}" type="button" class="btn btn-danger">Deletar</a>
+                                        <a href="{{ route('teachers.edit', ['id'=>$teacher->id])}}" type="button" class="btn btn-secondary">Editar</a>
+                                        <a href="{{ route('teachers.destroy', ['id'=>$teacher->id])}}" type="button" class="btn btn-danger">Deletar</a>
                                     </div>
                                 </td>
                             </tr>

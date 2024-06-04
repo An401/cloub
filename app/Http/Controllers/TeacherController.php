@@ -19,7 +19,7 @@ class TeacherController extends Controller
         return view('admin.teacher.create');
     }
 
-    public function save(Request $request)
+    public function store(Request $request)
     {
         $validation = $request->validate([
         'nome' => 'required',
@@ -75,7 +75,7 @@ class TeacherController extends Controller
             return redirect(route('teachers.index'));
         } else {
             session ()->flash('error','Ocorreu um erro');
-            return redirect(route('admin/teachers/update'));
+            return redirect(route('teachers.update'));
         }
     }
 }

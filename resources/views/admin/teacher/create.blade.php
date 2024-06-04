@@ -11,6 +11,7 @@
                 <div class="p-6 text-gray-900">
                     <div class="d-flex align-items-center justify-content-between">
                         <h1 class="mb-0">Cadastrar Professor</h1>
+                        <p><a href="{{ route('teachers.index') }}" class="btn btn-primary">Voltar</a></p>
                     </div>
                     <hr />
                     @if (session()->has('error'))
@@ -18,7 +19,7 @@
                         {{session('error')}}
                     </div>
                     @endif
-                    <form action="{{ route('admin/teachers/save') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('teachers.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="row mb-3">
                             <div class="col">
@@ -68,7 +69,7 @@
  <!-- tentar estilizar esse botão de voltar-->
                         <div class="row">
                             <div class="d-grid">
-                            <p><a href="{{ route('teachers.index') }}" class="btn btn-primary">Voltar</a></p>
+                            <!-- <p><a href="{{ route('teachers.index') }}" class="btn btn-primary">Voltar</a></p> -->
                                 <button class="btn btn-primary">Cadastrar</button>
                             </div>
                         </div>

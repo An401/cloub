@@ -18,7 +18,7 @@
                         {{session('error')}}
                     </div>
                     @endif
-                    <form action="{{ route('admin/teachers/update', $teachers->id) }}" method="POST">
+                    <form action="{{ route('teachers.update', $teachers->id) }}" method="POST">
                         @csrf
                         @method('PUT')
                         <div class="row mb-3">

@@ -26,10 +26,10 @@ Route::middleware(['auth', 'admin'])->group(function () {
 
     Route::get('/admin/teachers', [TeacherController::class, 'index'])->name('teachers.index');
     Route::get('/admin/teachers/create', [TeacherController::class, 'create'])->name('teachers.create');
-    Route::post('/admin/teachers/save', [TeacherController::class, 'save'])->name('admin/teachers/save');
-    Route::get('/admin/teachers/edit/{id}', [TeacherController::class, 'edit'])->name('admin/teachers/edit');
-    Route::put('/admin/teachers/edit/{id}', [TeacherController::class, 'update'])->name('admin/teachers/update');
-    Route::get('/weadmin/teachers/delete/{id}', [TeacherController::class, 'delete'])->name('admin/teachers/delete');
+    Route::post('/admin/teachers/store', [TeacherController::class, 'store'])->name('teachers.store');
+    Route::get('/admin/teachers/edit/{id}', [TeacherController::class, 'edit'])->name('teachers.edit');
+    Route::put('/admin/teachers/edit/{id}', [TeacherController::class, 'update'])->name('teachers.update');
+    Route::get('/admin/teachers/delete/{id}', [TeacherController::class, 'delete'])->name('teachers.destroy');
     
     
     Route::resource('students', TeacherController::class);

@@ -17,7 +17,7 @@
             <h1 class="text-branco flex justify-center text-center">Digite seus dados:</h1></div>
             <x-input-label class="text-branco" for="email" :value="__('')" />
             <x-text-input id="email" class="block mt-4 w-full opacity-75" placeholder="Email" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-4" />
+            <x-input-error :messages="$errors->get('email')" class="mt-2 text-vermelho" />
         </div>
 
         <!-- Password -->

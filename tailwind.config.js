@@ -35,6 +35,7 @@ export default {
             'azul': '#386FA4',
             'branco': '#D9FFFF',
             'brancoRgb': 'rgba(217,217,217,0.1)',
+            'transparente': '#d9d9d921'
         },
 
         backgroundImage: {

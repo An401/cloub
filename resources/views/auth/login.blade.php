@@ -12,18 +12,20 @@
 
         <!-- Email Address -->
         
-        <div class="mt-4">
+        <div class="mt-2">
             <div>
             <h1 class="text-branco flex justify-center text-center">Digite seus dados:</h1></div>
-            <x-input-label class="text-branco" for="email" :value="__('')" />
-            <x-text-input id="email" class="block mt-4 w-full opacity-75" placeholder="Email" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+            <x-input-label class="" for="email" :value="__('')" />
+            <h3 class="text-branco">* Email:</h3>
+            <x-text-input id="email" class="block mt-2 w-full opacity-75" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2 text-vermelho" />
         </div>
 
         <!-- Password -->
         <div class="mt-4">
             <x-input-label class="text-branco" for="password" :value="__('')" />
-            <x-text-input id="password" class="block mt-1 w-full opacity-75" placeholder="Senha" type="password" name="password" required autocomplete="current-password" />
+            <h3 class="text-branco">* Senha:</h3>
+            <x-text-input id="password" class="block mt-1 w-full opacity-75" type="password" name="password" required autocomplete="current-password" />
 
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>

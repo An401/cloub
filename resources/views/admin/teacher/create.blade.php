@@ -24,7 +24,7 @@
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="nome">Nome:</label>
-                                <input type="text" name="nome" class="form-control" placeholder="">
+                                <input type="text" name="nome" class="form-control" placeholder="" required>
                                 @error('nome')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror
@@ -33,7 +33,7 @@
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="email">Email:</label>
-                                <input type="email" name="email" class="form-control" placeholder="">
+                                <input type="email" name="email" class="form-control" placeholder="" required>
                                 @error('email')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror
@@ -42,7 +42,7 @@
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="senha">Senha de acesso:</label>
-                                <input type="text" name="senha" class="form-control" placeholder="">
+                                <input type="text" name="senha" class="form-control" placeholder="" required>
                                 @error('senha')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror
@@ -51,7 +51,7 @@
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="cpf">CPF:</label>
-                                <input type="number" name="cpf" class="form-control" placeholder="">
+                                <input type="number" name="cpf" class="form-control" placeholder="" required>
                                 @error('cpf')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror
@@ -60,7 +60,7 @@
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="disciplina">Disciplina:</label>
-                                <input type="text" name="disciplina" class="form-control" placeholder="">
+                                <input type="text" name="disciplina" class="form-control" placeholder="" required>
                                 @error('disciplina')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror

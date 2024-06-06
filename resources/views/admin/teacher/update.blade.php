@@ -24,7 +24,7 @@
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="nome">Nome:</label>
-                                <input type="text" name="nome" class="form-control" placeholder="" value="{{$teachers->nome}}">
+                                <input type="text" name="nome" class="form-control" placeholder="" value="{{$teachers->nome}}" required>
                                 @error('nome')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror
@@ -33,7 +33,7 @@
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="email">Email:</label>
-                                <input type="email" name="email" class="form-control" placeholder="" value="{{$teachers->email}}">
+                                <input type="email" name="email" class="form-control" placeholder="" value="{{$teachers->email}}" required>
                                 @error('email')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror
@@ -42,7 +42,7 @@
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="senha">Senha de acesso:</label>
-                                <input type="text" name="senha" class="form-control" placeholder="" value="{{$teachers->senha}}">
+                                <input type="text" name="senha" class="form-control" placeholder="" value="{{$teachers->senha}}" required>
                                 @error('senha')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror
@@ -51,7 +51,7 @@
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="cpf">CPF:</label>
-                                <input type="number" name="cpf" class="form-control" placeholder="" value="{{$teachers->cpf}}">
+                                <input type="number" name="cpf" class="form-control" placeholder="" value="{{$teachers->cpf}}" required>
                                 @error('cpf')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror
@@ -60,7 +60,7 @@
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="disciplina">Disciplina:</label>
-                                <input type="text" name="disciplina" class="form-control" placeholder="" value="{{$teachers->disciplina}}">
+                                <input type="text" name="disciplina" class="form-control" placeholder="" value="{{$teachers->disciplina}}" required>
                                 @error('disciplina')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror

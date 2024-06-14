@@ -10,4 +10,9 @@ class HomeController extends Controller
     {
         return view('admin/dashboard');
     }
+
+    public function comunidade()
+    {
+        return view('admin/comunidade');
+    }
 }

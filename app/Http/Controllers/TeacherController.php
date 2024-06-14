@@ -58,17 +58,12 @@ class TeacherController extends Controller
     public function update(Request $request, $id)
     {
         $teachers = Teacher::findOrFail($id);
-        $nome = $request->nome;
-        $email = $request->email;
-        $senha = $request->senha;
-        $cpf = $request->cpf;
-        $disciplina = $request->disciplina;
 
-        $teachers->nome = $nome;
-        $teachers->email = $email;
-        $teachers->senha = $senha;
-        $teachers->cpf = $cpf;
-        $teachers->disciplina = $disciplina;
+        $teachers->nome = $request->nome;
+        $teachers->email = $request->email;
+        $teachers->senha = $request->senha;
+        $teachers->cpf = $request->cpf;
+        $teachers->disciplina = $request->disciplina;
         $data = $teachers->save();
         if ($data) {
             session ()->flash('success','Dados atualizados com sucesso!');
